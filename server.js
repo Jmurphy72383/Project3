@@ -17,7 +17,7 @@ app.use(bodyParser.json());
 
 //Static directory
 app.use(express.static("public"));
-//app.use('/static', express.static(path.join(__dirname, 'client/build')));
+app.use('/static', express.static(path.join(__dirname, 'client/build')));
 
 //Routes
 require("./routes/html-routes.js")(app);
