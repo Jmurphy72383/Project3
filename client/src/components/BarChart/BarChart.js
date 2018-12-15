@@ -8,7 +8,7 @@ const BarChart = (props) => (
             options={props.options}
             series={props.series}
             labels={props.labels}
-            type={props.type}
+            type="pie"
             height="100%"
             width="100%"
         />

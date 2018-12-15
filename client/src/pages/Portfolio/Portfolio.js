@@ -90,8 +90,6 @@ class Portfolio extends Component {
                 <BarChart options={this.state.options}
                         series={this.state.series}
                         labels={this.state.labels}
-                        type={"pie"}
-                
                 />
                 <Wrapper>
                     <PortfolioTable owns={this.state.stocksOwned}
