@@ -13,10 +13,16 @@ module.exports = function(app) {
         })
     })
 
+    app.get("/api/allCrypto", function(req, res) {
+        db.crypto_symbols.findAll({}).then(function(results) {
+            res.json(results);
+        })
+    })
+
     app.get("/api/nyse/:singleStockNyse?", function(req, res) {
         if(req.params.singleStockNyse) {
             db.nyse_symbols.findAll({
-                limit: 10,
+                limit: 15,
                 where: {
                     company_name: {
                         $like: '%' + req.params.singleStockNyse + '%'
@@ -31,7 +37,7 @@ module.exports = function(app) {
     app.get("/api/nasdaq/:singleStockNasdaq?", function(req, res) {
         if(req.params.singleStockNasdaq) {
             db.nasdaq_symbols.findAll({
-                limit: 10,
+                limit: 15,
                 where: {
                     company_name: {
                         $like: '%' + req.params.singleStockNasdaq + '%'

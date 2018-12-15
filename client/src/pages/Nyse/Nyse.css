@@ -1,0 +1,7 @@
+.list-wrapper {
+    border: 5px double black;
+    width: 20%;
+    height: 514px;
+    overflow-y: scroll;
+    box-shadow: 10px 10px 5px grey;
+}

@@ -1,0 +1,43 @@
+.info-div h2 {
+    text-align: center;
+    text-decoration-line: underline;
+}
+
+.info-div h3 {
+    margin-left: 5px;
+}
+
+.info-div span {
+    text-decoration-line: underline;
+}
+
+.info-div h5 {
+    margin-left: 5px;
+}
+
+.stockInfo-btn-div {
+    text-align: center;
+}
+
+.stockInfo-btn {
+    margin: 0 auto;
+    background-color: azure;
+    font-weight: bolder;
+}
+
+.buy-div {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.buy-div-input {
+    display: block;
+    margin: 0 auto;
+}
+
+.buy-div-btn {
+    display: block;
+    background-color: azure;
+    font-weight: bolder;
+    margin: 0 auto;
+}

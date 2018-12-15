@@ -1,0 +1,29 @@
+nav {
+    float: right;
+}
+
+.nav-div {
+    border-bottom: 5px solid black;
+}
+
+.navbar-a {
+    padding: 10px;
+    font-family: 'IM Fell English SC', serif;
+    font-weight: bold;
+    color: black;
+    font-size: 20px;
+}
+
+.navbar-a:hover {
+    color: blue;
+}
+
+.navbar-h1 {
+    display: inline;
+    color: black;
+}
+
+.header-logo {
+    width: 5%;
+    height: 5%
+}

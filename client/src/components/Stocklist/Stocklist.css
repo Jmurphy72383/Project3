@@ -1,0 +1,15 @@
+.list-div h2 {
+    text-align: center;
+    text-decoration-line: underline;
+}
+
+.list-div, input, button {
+    text-align: center;
+    margin-bottom: 7px;
+}
+
+.list-div button {
+    background-color: azure;
+    font-weight: bolder;
+}
+

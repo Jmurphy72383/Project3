@@ -1,0 +1,13 @@
+.headlines-div {
+    text-align: center
+}
+
+.headlines-div h2 {
+    text-align: center;
+    text-decoration-line: underline;
+}
+
+.headlines-div button {
+    background-color: azure;
+    font-weight: bolder;
+}

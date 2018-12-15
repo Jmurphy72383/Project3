@@ -1,0 +1,9 @@
+.banner-div {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.banner-div p {
+    margin: 0 10%;
+}
