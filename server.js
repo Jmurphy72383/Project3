@@ -19,6 +19,7 @@ app.use(bodyParser.json());
 app.use(express.static("public/index.html"));
 
 //Routes
+require("./routes/html-routes.js")(app);
 require("./routes/symbols-api-routes.js")(app);
 require("./routes/stocks-api-routes.js")(app);
 require("./routes/user-api-routes.js")(app);
