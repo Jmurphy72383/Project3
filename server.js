@@ -17,7 +17,6 @@ app.use(bodyParser.json());
 
 //Static directory
 app.use(express.static("public"));
-app.use(express.static("build"));
 //app.use('/static', express.static(path.join(__dirname, 'client/build')));
 
 //Routes
