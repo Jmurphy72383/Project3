@@ -1,7 +1,7 @@
 //Dependencies ////////////////////////////////////////////
-var express = require("express");
-var bodyParser = require("body-parser");
-
+const express = require("express");
+const bodyParser = require("body-parser");
+const path = require("path");
 //Sets up the Express App
 var app = express();
 var PORT = process.env.PORT || 3001;
@@ -18,6 +18,14 @@ app.use(bodyParser.json());
 //Static directory
 app.use(express.static("public"));
 //app.use('/static', express.static(path.join(__dirname, 'client/build')));
+app.use(express.static(__dirname));
+app.use(express.static(path.join(__dirname, 'build')));
+// app.get('/ping', function (req, res) {
+//  return res.send('pong');
+// });
+app.get('/', function (req, res) {
+  res.sendFile(path.join(__dirname, 'build', 'index.html'));
+});
 
 //Routes
 require("./routes/html-routes.js")(app);
