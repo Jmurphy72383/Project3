@@ -15,7 +15,7 @@
   "bugs": {
     "url": "https://github.com/Jmurphy72383/Project3/issues"
   },
-  "homepage": "https://github.com/Jmurphy72383/Project3#readme",
+  "homepage": ".",
   "dependencies": {
     "axios": "^0.18.0",
     "body-parser": "^1.18.3",
