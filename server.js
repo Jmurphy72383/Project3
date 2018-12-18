@@ -14,10 +14,11 @@ var db = require("./models");
 app.use(bodyParser.urlencoded({ extended: true}));
 //parse application/json
 app.use(bodyParser.json());
+//**********SERVE UP STATIC ASSETS***********/
+if (process.env.NODE_ENV === "production") {
+    app.use(express.static("client/build"));
+}
 
-//Static directory
-app.use(express.static("public"));
-//app.use('/static', express.static(path.join(__dirname, 'client/build')));
 
 //Routes
 require("./routes/html-routes.js")(app);
