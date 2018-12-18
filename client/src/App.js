@@ -12,9 +12,11 @@ import Login from "./components/Auth/Login";
 
 const config = {
   issuer: 'https://dev-873570.oktapreview.com/oauth2/default',
-  redirect_uri: window.location.origin + '/implicit/callback',
+  redirect_uri: 'https://rocky-retreat-71857.herokuapp.com/home',
   client_id: '0oaic8dsmd0mIfUrA0h7'
 }
+
+//window.location.origin + '/implicit/callback'
 
 function onAuthRequired({history}) {
   history.push('/login');
