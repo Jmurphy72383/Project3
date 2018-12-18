@@ -1,3 +1,4 @@
+//*********************************************************************************************************************************** */
 import React from 'react';
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import { Security, SecureRoute, ImplicitCallback } from '@okta/okta-react';
@@ -12,7 +13,7 @@ import Login from "./components/Auth/Login";
 
 const config = {
   issuer: 'https://dev-873570.oktapreview.com/oauth2/default',
-  redirect_uri: window.location.origin + '/implicit/callback',
+  redirect_uri: 'http://localhost:8080/authorization-code/callback',
   client_id: '0oaic8dsmd0mIfUrA0h7'
 }
 
